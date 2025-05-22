@@ -5,7 +5,7 @@ export default function Projects() {
       description:
         "A minimal, responsive weather app that uses the OpenWeatherMap API to fetch weather data and display it in a clean and intuitive interface.",
       tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-      link: "https://feather-weather.vercel.app/",
+      link: "https://feather-weather-fdqz.vercel.app/",
     },
     {
       title: "Spektra",
