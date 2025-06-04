@@ -1,3 +1,5 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Projects from "./projects";
 import About from "./about";
 import Contact from "./contact";
@@ -6,6 +8,20 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Calculate scale based on scroll position
+  const maxScroll = 300; // px after which the image is at normal scale
+  const scale = Math.max(1.1 - (scrollY / maxScroll) * 0.1, 1.0);
+
   return (
     <>
       <nav className="w-full flex justify-center items-center gap-6 py-4 bg-[var(--background)]/80 backdrop-blur sticky top-0 z-40 border-b border-[var(--primary)]/10">
@@ -28,6 +44,12 @@ export default function Home() {
         </div>
         <ThemeToggle />
       </nav>
+      <img
+        src="/banner.png"
+        alt="Banner"
+        className="w-full h-auto max-h-[55rem] object-cover object-center transition-transform duration-300"
+        style={{ display: "block", transform: `scale(${scale})` }}
+      />
       <main
         id="home"
         className="flex flex-col items-center justify-center min-h-screen gap-8 bg-[var(--background)] text-[var(--primary)] transition-colors"
