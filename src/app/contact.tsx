@@ -25,20 +25,20 @@ export default function Contact() {
             type="text"
             name="name"
             required
-            placeholder="Your Name"
+            placeholder="Kshitij Rangari"
             className="px-3 py-2 rounded border border-[var(--primary)]/10 bg-[var(--background)] text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />
           <input
             type="email"
             name="email"
             required
-            placeholder="Your Email"
+            placeholder="kshitij.rangari92@gmail.com"
             className="px-3 py-2 rounded border border-[var(--primary)]/10 bg-[var(--background)] text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />
           <textarea
             name="message"
             required
-            placeholder="Your Message"
+            placeholder="I'm interested in your services. Please contact me."
             rows={4}
             className="px-3 py-2 rounded border border-[var(--primary)]/10 bg-[var(--background)] text-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
           />

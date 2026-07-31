@@ -15,7 +15,7 @@ export default function Projects() {
       link: "https://spektra-ivory.vercel.app/",
     },
     {
-      title: "SceneSound",
+      title: "Accessly",
       description:
         "A AI based narrative audio stem generator. Create your own audio stems for your videos.",
       tech: [
@@ -28,7 +28,7 @@ export default function Projects() {
         "FFmpeg",
         "Docker",
       ],
-      link: "https://honest-perfection-production-c710.up.railway.app/",
+      link: "https://accessly.studio",
     },
     {
       title: "Kshitij Rangari",

@@ -6,7 +6,7 @@ export default function Resume() {
       </h2>
       <div className="flex flex-col items-center gap-4">
         <a
-          href="/Kshitij_Resume.pdf"
+          href="/Kshitij_Rangari_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded bg-[var(--primary)] text-[var(--background)] px-6 py-2 font-semibold hover:bg-[color:var(--primary-dark)] transition-colors"

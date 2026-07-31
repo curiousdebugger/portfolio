@@ -86,7 +86,7 @@ export default function Home() {
               </a>
             </div>
             <a
-              href="/Kshitij_Resume.pdf"
+              href="/Kshitij_Rangari_Resume.pdf"
               download
               className="px-4 py-2 text-sm font-medium text-[var(--primary)] border border-[var(--primary)] rounded-md hover:bg-[var(--primary)] hover:text-[var(--background)] transition-colors"
             >
